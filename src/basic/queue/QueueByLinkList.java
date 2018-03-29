@@ -30,12 +30,6 @@ public class QueueByLinkList {
 		return temp;
 	}
 	
-	public void traverseQueue(QueueByLinkList queue){
-		while(queue.front != null){
-			System.out.print(queue.front.data+"\t");
-			queue.front = queue.front.next;
-		}
-	}
 	public static void main(String[] args) {
 		QueueByLinkList q =new QueueByLinkList();
 	        q.enQueue(10);
@@ -54,9 +48,6 @@ public class QueueByLinkList {
 	        System.out.println("Dequeued item is "+ q.deQueue().data);
 	        System.out.println("front "+q.front.data);
 	        System.out.println("rear "+q.rear.data);
-	        
-	        System.out.println("***** traversing queue *******");
-	        q.traverseQueue(q);
 	}
 }
 
