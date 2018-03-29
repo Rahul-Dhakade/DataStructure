@@ -11,8 +11,10 @@ public class QueueByLinkList {
 			return;
 		}
 		
+		
 		this.rear.next = temp;
 		this.rear = temp;
+		
 		System.out.println("Enqueued item is "+data);
 	}
 	
